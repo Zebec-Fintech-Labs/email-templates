@@ -1,0 +1,490 @@
+<!doctype html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  lang="en"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <title>Zebec Network - Login OTP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      li::marker {
+        margin-right: 5px !important;
+      }
+      a {
+        text-decoration: none;
+      }
+      .link {
+        color: rgba(54, 161, 139, 1);
+        cursor: pointer;
+      }
+      .wrapper {
+        padding: 48px;
+        background-color: #fff;
+        background: rgba(7, 204, 148, 0.05);
+      }
+      .container {
+        border-radius: 8px;
+        border: 1px solid rgba(227, 229, 229, 1);
+        background: rgba(255, 255, 255, 1);
+        padding: 32px;
+        width: 100%;
+      }
+      .social-link {
+        width: 24px;
+        height: 24px;
+        /* border-radius: 50%; */
+      }
+      .envelope {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        display: block;
+      }
+      .user {
+        color: rgba(51, 51, 51, 1);
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+      }
+      .layout-container {
+        margin-top: 32px;
+        display: block;
+        text-align: center;
+      }
+      .paragraph {
+        color: rgba(20, 20, 20, 1);
+        font-size: 16px;
+        line-height: 22px;
+      }
+      .otp {
+        color: rgba(54, 161, 139, 1);
+        font-size: 48px;
+        /* font-weight: 600; */
+      }
+      .subtitle {
+        color: rgba(54, 161, 139, 1);
+        font-size: 16px;
+        font-style: normal;
+        /* font-weight: 600; */
+        line-height: 22px;
+      }
+      .terms-conditions > table {
+        text-align: center;
+        width: 100%;
+      }
+      .bottom-issues-information {
+        color: #333;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: justify;
+      }
+      .paragraph-small {
+        color: rgba(121, 121, 121, 1);
+        text-align: center;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: inline-block;
+      }
+      .regards {
+        text-align: left;
+      }
+      .social-links {
+        float: right;
+      }
+      .terms-conditions > table a,
+      .terms-conditions > table li {
+        color: #6c6c6c;
+        text-align: center;
+        font-size: 10px;
+      }
+      .discord-link {
+        padding-left: 32px;
+      }
+      .second-terms-conditions {
+        display: none;
+      }
+
+      @media screen and (max-width: 768px) {
+        .first-terms-conditions {
+          display: none;
+        }
+        .second-terms-conditions {
+          display: block;
+        }
+      }
+      .confirm-email-link {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+        height: 40px;
+        padding: 8px 24px;
+        text-align: center;
+        gap: 8px;
+        border-radius: 8px;
+        background: #36a18b;
+        color: #fff;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 575px) {
+        .discord-link {
+          padding-left: 0px;
+        }
+        .otp {
+          font-size: 32px;
+        }
+        .logo {
+          display: block;
+          margin: auto;
+        }
+        table.social-links.first {
+          display: none;
+        }
+        table.social-links {
+          margin: 12px auto 0;
+          float: none !important;
+        }
+        .wrapper {
+          padding: 6px !important;
+        }
+        .container {
+          padding: 12px !important;
+        }
+        .layout-container {
+          margin-top: 24px !important;
+        }
+        .confirm-email-link {
+          display: block;
+          max-width: 265px;
+          width: 100%;
+          height: 32px;
+          padding: 8px 16px;
+          text-align: center;
+          gap: 8px;
+          border-radius: 8px;
+          background: #36a18b;
+          color: #fff;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="wrapper">
+    <table
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      height="100%"
+      width="100%"
+      class="container"
+    >
+      <tbody>
+        <tr>
+          <td>
+            <a
+              href="https://card.zebec.io/"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="https://github.com/Zebec-Fintech-Labs/email-templates/blob/master/email-template-images/zebec-logo.png?raw=true"
+                alt="Zebec Network"
+                width="166"
+                class="logo"
+                style="height: auto"
+              />
+            </a>
+            <table
+              align="right"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="social-links first"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <a
+                      href="https://discord.com/invite/fJM9cHuvvB"
+                      target="_blank"
+                      style="text-decoration: none"
+                    >
+                      <img
+                        src="https://github.com/tribal-finance/email-templates-tribal/blob/main/email-template-images/discord.png?raw=true"
+                        alt="Discord"
+                        class="social-link"
+                      />
+                    </a>
+                  </td>
+                  <td style="margin-left: 12px; display: inline-block">
+                    <a
+                      href="https://t.me/zebecprotocol"
+                      target="_blank"
+                      style="text-decoration: none"
+                    >
+                      <img
+                        src="https://github.com/tribal-finance/email-templates-tribal/blob/main/email-template-images/telegram.png?raw=true"
+                        alt="Telegram"
+                        class="social-link"
+                      />
+                    </a>
+                  </td>
+                  <td style="margin-left: 12px; display: inline-block">
+                    <a
+                      href="https://x.com/Zebec_HQ"
+                      target="_blank"
+                      style="text-decoration: none"
+                    >
+                      <img
+                        src="https://github.com/tribal-finance/email-templates-tribal/blob/main/email-template-images/twitter.png?raw=true"
+                        alt="Twitter"
+                        class="social-link"
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="envelope">
+            <img
+              src="https://github.com/tribal-finance/email-templates-tribal/blob/main/email-template-images/email-image.png?raw=true"
+              alt="Graphics"
+              width="200"
+              height="200"
+              style="border: none"
+            />
+          </td>
+          <td class="layout-container" style="margin-top: 0 !important">
+            <span class="user"> Verify your email address</span>
+          </td>
+          <td class="layout-container">
+            <p class="paragraph">
+              Please click the button below to confirm your email address and
+              activate your account
+            </p>
+          </td>
+          <td class="layout-container">
+            <table style="display: block">
+              <tbody style="display: block">
+                <tr style="text-align: center; display: block">
+                  <td style="display: block; text-align: center">
+                    <a
+                      href="{{confirmation_url}}"
+                      style="margin: auto"
+                      target="_blank"
+                      class="confirm-email-link"
+                      >Confirm Email</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+
+          <td class="layout-container">
+            <p class="bottom-issues-information">
+              If you received this in error, simply ignore this email and do not
+              click the button.
+            </p>
+          </td>
+          <td class="layout-container" style="margin-top: 0">
+            <p class="bottom-issues-information">
+              If you need assistance with your account, please reach out to our
+              Customer Service team at
+              <a href="mailto:info@zebecnetwork.io" target="_blank">
+                <span class="link">info@zebecnetwork.io</span>
+              </a>
+            </p>
+          </td>
+          <td class="layout-container regards">
+            <p class="paragraph" style="line-height: 0% !important">
+              Best Regards,
+            </p>
+            <span class="subtitle" style="color: #333333; font-weight: 600">
+              Zebec Network
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td style="margin-top: 40px; display: block; position: relative">
+            <a
+              href="https://card.zebec.io/"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="https://github.com/Zebec-Fintech-Labs/email-templates/blob/master/email-template-images/zebec-logo.png?raw=true"
+                alt="Zebec Network"
+                class="logo"
+                width="166"
+                style="height: auto"
+              />
+            </a>
+            <table
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="social-links"
+            >
+              <tbody>
+                <tr>
+                  <td
+                    class="terms-conditions first-terms-conditions"
+                    style="position: relative"
+                  >
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      height="100%"
+                      width="100%"
+                    >
+                      <tbody class="">
+                        <tr>
+                          <td class="paragraph-small">
+                            <a
+                              href="https://card.zebec.io/privacy-policy"
+                              target="_blank"
+                              >Privacy policy</a
+                            >
+                          </td>
+                          <td class="paragraph-small" style="margin-left: 12px">
+                            <li>
+                              <a
+                                href="https://card.zebec.io/terms-and-conditions"
+                                target="_blank"
+                                >Terms of service</a
+                              >
+                            </li>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td class="discord-link">
+                    <a
+                      href="https://discord.com/invite/fJM9cHuvvB"
+                      target="_blank"
+                      style="text-decoration: none"
+                    >
+                      <img
+                        src="https://github.com/tribal-finance/email-templates-tribal/blob/main/email-template-images/discord.png?raw=true"
+                        alt="Discord"
+                        class="social-link"
+                      />
+                    </a>
+                  </td>
+                  <td style="margin-left: 12px; display: inline-block">
+                    <a
+                      href="https://t.me/zebecprotocol"
+                      target="_blank"
+                      style="text-decoration: none"
+                    >
+                      <img
+                        src="https://github.com/tribal-finance/email-templates-tribal/blob/main/email-template-images/telegram.png?raw=true"
+                        alt="Telegram"
+                        class="social-link"
+                      />
+                    </a>
+                  </td>
+                  <td style="margin-left: 12px; display: inline-block">
+                    <a
+                      href="https://x.com/Zebec_HQ"
+                      target="_blank"
+                      style="text-decoration: none"
+                    >
+                      <img
+                        src="https://github.com/tribal-finance/email-templates-tribal/blob/main/email-template-images/twitter.png?raw=true"
+                        alt="Twitter"
+                        class="social-link"
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td
+            class="layout-container terms-conditions second-terms-conditions"
+            style="position: relative"
+          >
+            <table
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              height="100%"
+              width="100%"
+            >
+              <tbody class="">
+                <tr>
+                  <td class="paragraph-small">
+                    <a
+                      href="https://card.zebec.io/privacy-policy"
+                      target="_blank"
+                      >Privacy policy</a
+                    >
+                  </td>
+                  <td class="paragraph-small" style="margin-left: 12px">
+                    <li>
+                      <a
+                        href="https://card.zebec.io/terms-and-conditions"
+                        target="_blank"
+                        >Terms of service</a
+                      >
+                    </li>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
